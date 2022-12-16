@@ -1,10 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:nhtelwebsite/widgets/navbar.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
+
+  HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    var screenSize = MediaQuery.of(context).size;
+    return Scaffold(
+      key: scaffoldKey,
+      extendBodyBehindAppBar: true,
+      appBar: PreferredSize(
+        preferredSize: Size(screenSize.width, 1000),
+        child: const NavBar(),
+      ),
+      backgroundColor: Colors.white,
+    );
   }
 }
