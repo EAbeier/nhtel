@@ -7,7 +7,12 @@ enum EnumIcons {
   wifiAccommodations,
   tv,
   mug,
-  airConditioner
+  airConditioner,
+  attendance,
+  onePerson,
+  twoPeople,
+  threePeople,
+  pig
 }
 
 extension EnumGetter on EnumIcons {
@@ -31,6 +36,16 @@ extension EnumGetter on EnumIcons {
         return "assets/icons/mug_icon.svg";
       case EnumIcons.airConditioner:
         return "assets/icons/air_conditioner_icon.svg";
+      case EnumIcons.attendance:
+        return "assets/icons/24_hours_sign_icon.svg";
+      case EnumIcons.onePerson:
+        return "assets/icons/one_person_icon.svg";
+      case EnumIcons.twoPeople:
+        return "assets/icons/two_people_Icon.svg";
+      case EnumIcons.threePeople:
+        return "assets/icons/three_people_Icon.svg";
+      case EnumIcons.pig:
+        return "assets/icons/pig_icon.svg";
     }
   }
 }

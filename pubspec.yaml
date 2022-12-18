@@ -36,6 +36,10 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  flutter_svg: ^1.1.6
+  build_web_compilers: ^3.2.7
+  build_runner: ^2.3.3
+  intl: ^0.18.0
 
 dev_dependencies:
   flutter_test:
@@ -71,6 +75,11 @@ flutter:
     - assets/icons/tv_icon.svg
     - assets/icons/mug_icon.svg
     - assets/icons/air_conditioner_icon.svg
+    - assets/icons/24_hours_sign_icon.svg
+    - assets/icons/one_person_icon.svg
+    - assets/icons/two_people_Icon.svg
+    - assets/icons/three_people_Icon.svg
+    - assets/icons/pig_icon.svg
 
     # images
     - assets/images/nhtel_logo.png
@@ -94,7 +103,7 @@ flutter:
   fonts:
     - family: Inter
       fonts:
-        - asset: assets/fonts/Inter-ExtraLight;
+        - asset: assets/fonts/Inter-ExtraLight.ttf
         - asset: assets/fonts/Inter-Thin.ttf
           weight: 300
         - asset: assets/fonts/Inter-Medium.ttf
@@ -103,11 +112,8 @@ flutter:
           weight: 400
         - asset: assets/fonts/inter-Bold.ttf
         - asset: assets/fonts/inter-Black.ttf
-          weight: 500
         - asset: assets/fonts/inter-ExtraBold.ttf
-          weight: 700  
-        - asset: assets/fonts/Inter-Italic.ttf
-          style: italic
+          weight: 700 
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

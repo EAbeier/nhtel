@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:nhtelwebsite/widgets/navbar.dart';
+import 'package:nhtelwebsite/helpers/responsive.dart';
+import 'package:nhtelwebsite/widgets/body.dart';
+import 'package:nhtelwebsite/widgets/nav_bar.dart';
+import 'package:nhtelwebsite/widgets/navbar_mobile.dart';
+import 'package:nhtelwebsite/widgets/side_menu.dart';
 
 class HomePage extends StatelessWidget {
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
@@ -12,10 +16,17 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       key: scaffoldKey,
       extendBodyBehindAppBar: true,
-      appBar: PreferredSize(
-        preferredSize: Size(screenSize.width, 1000),
-        child: const NavBar(),
-      ),
+      appBar: ResponsiveWidget.isSmallScreen(context)
+          ? PreferredSize(
+              preferredSize: Size(screenSize.width, 80),
+              child: MobileNavBar(scaffoldKey),
+            )
+          : PreferredSize(
+              preferredSize: Size(screenSize.width, 200),
+              child: const NavBar(),
+            ),
+      drawer: SideMenu(),
+      body: const Body(),
       backgroundColor: Colors.white,
     );
   }

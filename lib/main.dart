@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nhtelwebsite/helpers/themes/theme.dart';
 import 'package:nhtelwebsite/pages/home/home.dart';
 
 void main() {
@@ -12,10 +13,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      debugShowCheckedModeBanner: false,
+      title: 'Nhtel',
+      theme: theme,
+      themeMode: ThemeMode.light,
       home: HomePage(),
     );
   }

@@ -3,7 +3,7 @@
 
 const HOTELTITLE = "O Hotel";
 
-const ACOMODATIONSTITLE = "Acomodações";
+const ACCOMMODATIONSTITLE = "Acomodações";
 
 const CONVENIENCESTITLE = "Comodidades";
 
