@@ -12,7 +12,9 @@ enum EnumIcons {
   onePerson,
   twoPeople,
   threePeople,
-  pig
+  pig,
+  whatsApp,
+  work
 }
 
 extension EnumGetter on EnumIcons {
@@ -46,6 +48,10 @@ extension EnumGetter on EnumIcons {
         return "assets/icons/three_people_Icon.svg";
       case EnumIcons.pig:
         return "assets/icons/pig_icon.svg";
+      case EnumIcons.whatsApp:
+        return "assets/icons/whatsapp.png";
+      case EnumIcons.work:
+        return "assets/icons/mesa_trabalho_icon.svg";
     }
   }
 }

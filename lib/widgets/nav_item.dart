@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:nhtelwebsite/constants/constants.dart';
-import 'package:nhtelwebsite/helpers/enums/enum_icons.dart';
-import 'package:nhtelwebsite/helpers/themes/theme.dart';
 
 class NavItem extends StatelessWidget {
   final String iconPath;
   final String itemTitle;
+  final int index;
+  final void Function(int) animateToIndex;
 
   const NavItem({
     Key? key,
     required this.iconPath,
     required this.itemTitle,
+    required this.index,
+    required this.animateToIndex,
   }) : super(key: key);
 
   @override
@@ -19,7 +20,7 @@ class NavItem extends StatelessWidget {
     return MouseRegion(
       cursor: SystemMouseCursors.click,
       child: InkWell(
-        onTap: () {},
+        onTap: () => {animateToIndex(index)},
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -51,7 +52,7 @@ class NavItem extends StatelessWidget {
                 ),
                 Text(
                   itemTitle,
-                  style: Theme.of(context).textTheme.headline4,
+                  style: Theme.of(context).textTheme.headline6,
                 ),
               ],
             )

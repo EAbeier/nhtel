@@ -4,7 +4,8 @@ enum EnumImages {
   conveniences,
   events,
   hotel,
-  localization
+  localization,
+  google
 }
 
 extension EnumGetter on EnumImages {
@@ -13,15 +14,17 @@ extension EnumGetter on EnumImages {
       case EnumImages.nhtelLogo:
         return "assets/images/nhtel_logo.png";
       case EnumImages.accommodations:
-        return "";
+        return "assets/images/parte_accommodations.png";
       case EnumImages.conveniences:
-        return "";
+        return "assets/images/parte_conveniences.png";
       case EnumImages.events:
-        return "";
+        return "assets/images/parte_events.png";
       case EnumImages.hotel:
-        return "";
+        return "assets/images/parte_hotel.png";
       case EnumImages.localization:
-        return "";
+        return "assets/images/parte_localization.png";
+      case EnumImages.google:
+        return "assets/images/localization_on_google.png";
     }
   }
 }

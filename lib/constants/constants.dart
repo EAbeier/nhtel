@@ -39,12 +39,15 @@ const WIFI = "Wifi";
 
 const WORKDESK = "Mesa de Trabalho";
 
+const TALKTOUS = "Fale Conosco";
+
 //Descriptions
 
 const HOTELDESCRIPTION =
     "O Nhtel surge com um novo conceito de hotelaria na cidade de novo Hamburgo. Com dois prédios separados temos duas opções de estadia para suprir qualquer necessidade. Um banho quente, uma cama confortável e uma boa noite de sono é a prioridade para nossos hóspedes.";
 
-const LOCALIZATIONDESCRIPTION = "";
+const LOCALIZATIONDESCRIPTION =
+    "Ficamos localizado a apenas 42Km de distância da capital Porto Alegre, 35min de metrô do Aeroporto Internacional Salgado Filho, 2km de carro e 3min de metrô do Centro de Eventos Fenac e da Rodoviária de Novo Hamburgo. Além de estarmos no coração da cidade e 2 quadras de distancia do Bourbon Shopping de Novo Hamburgo e 4km do Outlet I Fashion.";
 
 const CONVENIENCETVDESC =
     "Todos os quartos são equipados com  Tv LCD para que os nossos hóspedes possam usufruir de um descanso para a mente após um dia corrido.";
@@ -65,7 +68,7 @@ const CONVENIENCESATTENDANCEDESC =
     "O Nhtel conta com equipe 24 horas por dia e 7 dias por semana para melhor atendê-lo.";
 
 const EVENTSDESCRIPTION =
-    "Buscando inovar no mercado e oferecer um serviço a mais aos nossos clientes, agora o Nhtel tem a opção de locar nosso restaurante saloni para eventos relacionados encerramento de ano de empresas, chás de revelações";
+    "Buscando inovar no mercado e oferecer um serviço a mais aos nossos clientes, agora o Nhtel tem a opção de locar nosso restaurante saloni para eventos relacionados encerramento de ano de empresas, chás de revelações...";
 
 const ADDRESSDESCRIPTION =
     "Av. Pedro Adams Filho, 5291 Centro, Novo Hamburgo/RS 93510-025";

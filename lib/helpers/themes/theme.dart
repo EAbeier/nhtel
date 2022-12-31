@@ -23,28 +23,34 @@ final theme = ThemeData(
   backgroundColor: _backgroundColor,
   scaffoldBackgroundColor: _backgroundColor,
   textTheme: const TextTheme(
-    headline3: TextStyle(
+    headline2: TextStyle(
       fontSize: 48,
       fontWeight: FontWeight.w700,
       fontFamily: 'Inter',
       color: _bodyTextColor,
     ),
-    headline4: TextStyle(
-      fontSize: 25,
-      fontWeight: FontWeight.w700,
+    headline3: TextStyle(
+      fontSize: 30,
+      fontWeight: FontWeight.w300,
       fontFamily: 'Inter',
       color: _bodyTextColor,
     ),
-    headline5: TextStyle(
+    headline4: TextStyle(
       fontSize: 24,
       fontWeight: FontWeight.w700,
       fontFamily: 'Inter',
       color: _bodyTextColor,
     ),
+    headline5: TextStyle(
+        fontSize: 20,
+        fontWeight: FontWeight.w700,
+        fontFamily: 'Inter',
+        color: _bodyTextColor),
     headline6: TextStyle(
-      fontSize: 20,
+      fontSize: 25,
       fontWeight: FontWeight.w700,
       fontFamily: 'Inter',
+      color: _bodyTextColor,
     ),
     subtitle1: TextStyle(
       fontSize: 16,

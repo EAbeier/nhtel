@@ -6,9 +6,10 @@ import 'package:nhtelwebsite/models/menu.dart';
 import 'package:nhtelwebsite/widgets/nav_item.dart';
 
 class SideMenu extends StatelessWidget {
+  final void Function(int) animateToIndex;
   final Menu menu = Menu();
 
-  SideMenu({super.key});
+  SideMenu({super.key, required this.animateToIndex});
 
   @override
   Widget build(BuildContext context) {
@@ -30,6 +31,8 @@ class SideMenu extends StatelessWidget {
                 return Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: NavItem(
+                    index: index,
+                    animateToIndex: animateToIndex,
                     iconPath: item.iconPath,
                     itemTitle: item.title,
                   ),
@@ -37,14 +40,13 @@ class SideMenu extends StatelessWidget {
               },
             ),
           ),
-          Expanded(
-              child: Align(
+          Align(
             alignment: Alignment.bottomCenter,
             child: Text(
               "Copyright ${DateFormat('y').format(data)} | Nhtel",
               style: Theme.of(context).textTheme.caption,
             ),
-          ))
+          )
         ],
       ),
     );
