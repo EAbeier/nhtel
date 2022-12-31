@@ -40,41 +40,41 @@ class LocalizationSection extends StatelessWidget {
               ),
             ),
           ),
-          Flexible(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Container(
-                  height: screenSize.height - screenSize.height * 0.4,
-                  width: screenSize.width - screenSize.width * 0.2,
-                  child: Stack(
-                    children: [
-                      Text(
-                        LOCALIZATIONDESCRIPTION,
-                        style: TextStyle(
-                          fontFamily: 'Inter',
-                          fontSize: 20,
-                          fontWeight: FontWeight.w700,
-                          foreground: Paint()
-                            ..style = PaintingStyle.stroke
-                            ..strokeWidth = 1
-                            ..color = Colors.black,
-                        ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                height: screenSize.height - screenSize.height * 0.8,
+                width: screenSize.width - screenSize.width * 0.2,
+                child: Stack(
+                  children: [
+                    Text(
+                      LOCALIZATIONDESCRIPTION,
+                      style: TextStyle(
+                        fontFamily: 'Inter',
+                        fontSize: 20,
+                        fontWeight: FontWeight.w700,
+                        foreground: Paint()
+                          ..style = PaintingStyle.stroke
+                          ..strokeWidth = 1
+                          ..color = Colors.black,
                       ),
-                      Text(
-                        LOCALIZATIONDESCRIPTION,
-                        style: Theme.of(context).textTheme.headline5,
-                      ),
-                    ],
-                  ),
+                    ),
+                    Text(
+                      LOCALIZATIONDESCRIPTION,
+                      style: Theme.of(context).textTheme.headline5,
+                    ),
+                  ],
                 ),
-                Row(
+              ),
+              Padding(
+                padding: const EdgeInsets.all(20),
+                child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      height: screenSize.height - screenSize.height * 0.4,
-                      width: screenSize.width - screenSize.width * 0.4,
+                      height: screenSize.height - screenSize.height * 0.8,
+                      width: screenSize.width - screenSize.width * 0.6,
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           image: AssetImage(EnumImages.google.uri),
@@ -83,7 +83,7 @@ class LocalizationSection extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: screenSize.height - screenSize.height * 0.8,
+                      height: screenSize.height - screenSize.height * 0.9,
                       width: screenSize.width - screenSize.width * 0.8,
                       child: Stack(
                         children: [
@@ -108,34 +108,40 @@ class LocalizationSection extends StatelessWidget {
                     ),
                   ],
                 ),
-                Row(
+              ),
+              Padding(
+                padding: const EdgeInsets.all(10),
+                child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Stack(
-                      children: [
-                        Text(
-                          CONTACTSDESCRIPTION,
-                          style: TextStyle(
-                            fontFamily: 'Inter',
-                            fontSize: 20,
-                            fontWeight: FontWeight.w700,
-                            foreground: Paint()
-                              ..style = PaintingStyle.stroke
-                              ..strokeWidth = 1
-                              ..color = Colors.black,
+                    SizedBox(
+                      height: screenSize.height - screenSize.height * 0.9,
+                      width: screenSize.width - screenSize.width * 0.2,
+                      child: Stack(
+                        children: [
+                          Text(
+                            CONTACTSDESCRIPTION,
+                            style: TextStyle(
+                              fontFamily: 'Inter',
+                              fontSize: 20,
+                              fontWeight: FontWeight.w700,
+                              foreground: Paint()
+                                ..style = PaintingStyle.stroke
+                                ..strokeWidth = 1
+                                ..color = Colors.black,
+                            ),
                           ),
-                        ),
-                        Text(
-                          CONTACTSDESCRIPTION,
-                          style: Theme.of(context).textTheme.headline5,
-                        ),
-                      ],
+                          Text(
+                            CONTACTSDESCRIPTION,
+                            style: Theme.of(context).textTheme.headline5,
+                          ),
+                        ],
+                      ),
                     ),
                   ],
-                )
-              ],
-            ),
+                ),
+              )
+            ],
           )
         ],
       ),

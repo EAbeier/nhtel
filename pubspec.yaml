@@ -82,6 +82,7 @@ flutter:
     - assets/icons/three_people_Icon.svg
     - assets/icons/pig_icon.svg
     - assets/icons/whatsapp.png
+    - assets/icons/three_people_Icon.png
 
     # images
     - assets/images/nhtel_logo.png

@@ -1,28 +1,43 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nhtelwebsite/constants/constants.dart';
 import 'package:nhtelwebsite/helpers/enums/enum_icons.dart';
 import 'package:nhtelwebsite/helpers/enums/enum_images.dart';
 import 'package:nhtelwebsite/helpers/responsive.dart';
 import 'package:nhtelwebsite/helpers/style.dart';
 import 'package:nhtelwebsite/models/accommodation_images.dart';
+import 'package:nhtelwebsite/models/number_person_icons.dart';
+import 'package:nhtelwebsite/models/titles_and_descriptions.dart';
 import 'package:nhtelwebsite/widgets/section_title.dart';
 
-class AccommodationsSection extends StatelessWidget {
-  AccommodationsSection({super.key});
+class AccommodationsSection extends StatefulWidget {
+  const AccommodationsSection({super.key});
+
+  @override
+  State<AccommodationsSection> createState() => _AccommodationsSectionState();
+}
+
+class _AccommodationsSectionState extends State<AccommodationsSection> {
   final ScrollController _controller = ScrollController();
+  final ScrollController _controllerIcons = ScrollController();
+  var controlVariable = 0;
+
   double _width = 100.0;
-  var variavelControle = 0;
-  void _animateToIndex(int index, bool reduce) {
+
+  void _animateToIndex(int index) {
     _controller.animateTo(
       index * _width,
       duration: const Duration(seconds: 2),
       curve: Curves.fastOutSlowIn,
     );
-    if (reduce) {
-      variavelControle--;
-    } else {
-      variavelControle++;
-    }
+  }
+
+  void _animateIconToIndex(int index) {
+    _controllerIcons.animateTo(
+      index * 80,
+      duration: const Duration(seconds: 2),
+      curve: Curves.fastOutSlowIn,
+    );
   }
 
   @override
@@ -58,125 +73,216 @@ class AccommodationsSection extends StatelessWidget {
               ),
             ),
           ),
-          Flexible(
-            child: ListView.builder(
-              scrollDirection: Axis.horizontal,
-              controller: _controller,
-              itemCount: AccommodationImages.getAccommodationImages().length,
-              itemBuilder: (_, i) {
-                return Padding(
-                  padding: EdgeInsets.only(
-                      top: 10, bottom: screenSize.height / 4.25),
-                  child: Container(
-                    height: screenSize.height,
-                    width: screenSize.width,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage(
-                              AccommodationImages.getAccommodationImages()[i]),
-                          fit: BoxFit.cover),
+          Stack(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 20),
+                child: SizedBox(
+                  height: screenSize.height - screenSize.height * 0.2,
+                  width: screenSize.width,
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    controller: _controller,
+                    itemCount:
+                        AccommodationImages.getAccommodationImages().length,
+                    itemBuilder: (_, i) {
+                      return Padding(
+                        padding: EdgeInsets.only(
+                            top: 10, bottom: screenSize.height / 4.25),
+                        child: Container(
+                          height: screenSize.height,
+                          width: screenSize.width,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage(AccommodationImages
+                                    .getAccommodationImages()[i]),
+                                fit: BoxFit.cover),
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  SizedBox(
+                    height: screenSize.height - screenSize.height * 0.35,
+                    width: screenSize.width - screenSize.width * 0.6,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        SizedBox(
+                          height: 80,
+                          width: 80,
+                          child: InkWell(
+                            onTap: () => _changeInformations(true),
+                            child: MouseRegion(
+                              cursor: SystemMouseCursors.click,
+                              child: Icon(
+                                size: 80,
+                                Icons.arrow_left_sharp,
+                                color: secondaryColor,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          height: screenSize.height - screenSize.height * 0.2,
+                          width: screenSize.width - screenSize.width * 0.8,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Container(
+                                padding: const EdgeInsets.all(10),
+                                height: 100,
+                                width: 100,
+                                decoration: BoxDecoration(
+                                  color: primaryColor,
+                                  borderRadius: const BorderRadius.all(
+                                    Radius.circular(100),
+                                  ),
+                                ),
+                                child: Container(
+                                  height: 80,
+                                  width: 80,
+                                  decoration: BoxDecoration(
+                                    color: cardColor,
+                                    borderRadius: const BorderRadius.all(
+                                      Radius.circular(100),
+                                    ),
+                                  ),
+                                  child: ListView.builder(
+                                    scrollDirection: Axis.horizontal,
+                                    controller: _controllerIcons,
+                                    itemCount: NumberOfPersonIcons
+                                            .getNumberOfPersonIcons()
+                                        .length,
+                                    itemBuilder: (BuildContext _, int index) {
+                                      return Container(
+                                        padding: EdgeInsets.all(8),
+                                        height: 80,
+                                        width: 80,
+                                        child: NumberOfPersonIcons
+                                                        .getNumberOfPersonIcons()[
+                                                    index] !=
+                                                'assets/icons/three_people_Icon.png'
+                                            ? SvgPicture.asset(NumberOfPersonIcons
+                                                    .getNumberOfPersonIcons()[
+                                                index])
+                                            : Image.asset(NumberOfPersonIcons
+                                                    .getNumberOfPersonIcons()[
+                                                index]),
+                                      );
+                                    },
+                                  ),
+                                ),
+                              ),
+                              Container(
+                                margin: const EdgeInsets.all(20),
+                                height: 300,
+                                width: 500,
+                                decoration: BoxDecoration(
+                                  color: primaryColor,
+                                  borderRadius: const BorderRadius.only(
+                                    topLeft: Radius.circular(50),
+                                    topRight: Radius.circular(50),
+                                  ),
+                                ),
+                                child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    Container(
+                                      padding:
+                                          EdgeInsets.only(left: 15, right: 15),
+                                      height: 40,
+                                      width: 200,
+                                      child: ListView.builder(
+                                        scrollDirection: Axis.horizontal,
+                                        itemCount:
+                                            TitleAndDescriptions.getTitles()
+                                                .length,
+                                        itemBuilder:
+                                            (BuildContext _, int index) {
+                                          return Container(
+                                            height: 40,
+                                            width: 200,
+                                            child: Text(
+                                              TitleAndDescriptions.getTitles()[
+                                                  index],
+                                              style: Theme.of(context)
+                                                  .textTheme
+                                                  .subtitle1,
+                                            ),
+                                          );
+                                        },
+                                      ),
+                                    ),
+                                    Container(
+                                      height: 180,
+                                      width: 200,
+                                      child: Text(
+                                        textAlign: TextAlign.center,
+                                        overflow: TextOverflow.clip,
+                                        TitleAndDescriptions.getDescriptions()[
+                                            controlVariable],
+                                        style:
+                                            Theme.of(context).textTheme.caption,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          height: 80,
+                          width: 80,
+                          child: InkWell(
+                            onTap: () => _changeInformations(false),
+                            child: MouseRegion(
+                              cursor: SystemMouseCursors.click,
+                              child: Icon(
+                                size: 80,
+                                Icons.arrow_right_sharp,
+                                color: secondaryColor,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                );
-              },
-            ),
-          ),
+                ],
+              )
+            ],
+          )
         ],
       ),
     );
   }
-}
 
-/*Container(
-            height: screenSize.height + 100,
-            width: screenSize.width,
-            child: Row(
-              children: [
-                Container(
-                  height: screenSize.height + 100,
-                  width: screenSize.width,
-                  padding: EdgeInsets.only(right: 20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Flexible(
-                        child: Container(
-                          margin: EdgeInsets.only(right: 60),
-                          height: 40,
-                          width: 40,
-                          child: Icon(
-                            size: 100,
-                            Icons.arrow_left_sharp,
-                            color: secondaryColor,
-                          ),
-                        ),
-                      ),
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Container(
-                            margin: const EdgeInsets.all(8.0),
-                            padding: EdgeInsets.all(10),
-                            height: 112,
-                            width: 112,
-                            decoration: BoxDecoration(
-                              borderRadius: const BorderRadius.all(
-                                Radius.circular(100.0),
-                              ),
-                              color: primaryColor,
-                            ),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: const BorderRadius.all(
-                                  Radius.circular(100.0),
-                                ),
-                                color: accommodationsColor,
-                              ),
-                            ),
-                          ),
-                          Flexible(
-                            child: Container(
-                              margin: EdgeInsets.only(left: 5, right: 5),
-                              height: 400,
-                              width: 400,
-                              decoration: BoxDecoration(
-                                borderRadius: const BorderRadius.only(
-                                    topLeft: Radius.circular(30.0),
-                                    topRight: Radius.circular(30.0)),
-                                color: primaryColor,
-                              ),
-                              child: Column(),
-                            ),
-                          ),
-                        ],
-                      ),
-                      InkWell(
-                        onTap: () {
-                          if (variavelControle <
-                              AccommodationImages.getAccommodationImages()
-                                  .length) {
-                            _animateToIndex(variavelControle++, false);
-                          }
-                        },
-                        child: MouseRegion(
-                          cursor: SystemMouseCursors.click,
-                          child: Container(
-                            padding: EdgeInsets.only(right: 20),
-                            margin: EdgeInsets.only(right: 20),
-                            height: 40,
-                            width: 40,
-                            child: Icon(
-                              size: 100,
-                              Icons.arrow_right_sharp,
-                              color: secondaryColor,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          )*/ 
+  _changeInformations(bool isReduce) {
+    if (isReduce) {
+      if (controlVariable != 0) {
+        setState(() {
+          controlVariable--;
+          _animateToIndex(controlVariable);
+          _animateIconToIndex(controlVariable);
+        });
+      }
+      return;
+    }
+    if (controlVariable < AccommodationImages.getAccommodationImages().length) {
+      setState(() {
+        controlVariable++;
+        _animateToIndex(controlVariable);
+        _animateIconToIndex(controlVariable);
+      });
+    }
+    return;
+  }
+}

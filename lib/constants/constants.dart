@@ -15,15 +15,15 @@ const SUPERIORCOUPLETITLE = "Superior - Casal";
 
 const SUPERIORDOUBLESINGLETITLE = "Superior - Duplo Solteiro";
 
-const SUPERIORTIPLECOUPLETITLE = "Superior - Triplo Casal";
+const SUPERIORTRIPLECOUPLETITLE = "Superior - Triplo Casal";
 
-const SUPERIORTIPLESINGLETITLE = "Superior - Triplo Solteiro";
+const SUPERIORTRIPLESINGLETITLE = "Superior - Triplo Solteiro";
 
-const STANDARTCOUPLETITLE = "Standart - Casal";
+const STANDARDCOUPLETITLE = "Standart - Casal";
 
-const STANDARTDOUBLESINGLETITLE = "Standart - Duplo Solteiro";
+const STANDARDDOUBLESINGLETITLE = "Standart - Duplo Solteiro";
 
-const STANDARTSINGLETITLE = "Standart - Solteiro";
+const STANDARDSINGLETITLE = "Standart - Solteiro";
 
 const WORKECONOMYTITLE = "Work & Economy";
 
@@ -77,24 +77,24 @@ const CONTACTSDESCRIPTION =
     "Endereço: Av. Pedro Adams Filho, 5291 - Centro, Novo Hamburgo - RS, 93510-025 | Telefone: (51) 3066-0104";
 
 const SUPERIORCOUPLEDESC =
-    "Esta acomodação é a mais completa do hotel possuindo móveis sobre medida, como guarda-roupa, bancada de trabalho, conta com duas camas de solteiro confortaveis, TV  Smart, frigobar a ar condicionado quente e frio. Conta com um banheiro completo com bancada de mármore, comodidades como sabonete, shampoo, secador e toalhas.";
+    "Esta acomodação é a mais completa do hotel possuindo móveis sobre medida, TV  Smart, frigobar a ar condicionado quente e frio. Conta com um banheiro completo com bancada de mármore, comodidades como sabonete, shampoo, secador e toalhas.";
 
 const SUPERIORDOUBLESINGLEDESC =
-    "As suites Superiores incluem ar condicionado quente e frio, frigobar Tv Smart e um café da manhã em buffe com opções deliciosas para iniciar bem seu dia. Já a estadia nas acomodações superiores lhe proporciona uma boa noite de sono, uma suite com moveis simples, ar condicionado frio, frigobar e Tv LCD. Ambas acomodações possuem as comodidades padroes como shampoo, sabonete, toalhas e secador de cabelo.";
+    "A estadia nas acomodações superiores lhe proporciona uma boa noite de sono, uma suite com moveis simples, ar condicionado frio, frigobar e Tv LCD. Ambas acomodações possuem as comodidades padroes como shampoo, sabonete, toalhas e secador de cabelo.";
 
-const SUPERIORTIPLECOUPLEDESC =
+const SUPERIORTRIPLECOUPLEDESC =
     "Esta acomodação é a mais completa do hotel possuindo móveis sobre medida, como guarda-roupa, bancada de trabalho, conta com duas camas, uma de solteiro e uma de casal ou trêsde solteiro, TV  Smart, frigobar a ar condicionado quente e frio. Conta com um banheiro completo com bancada de mármore, comodidades como sabonete, shampoo, secador e toalhas.";
 
-const SUPERIORTIPLESINGLEDESC =
+const SUPERIORTRIPLESINGLEDESC =
     "As suites Superiores incluem ar condicionado quente e frio, frigobar Tv Smart e um café da manhã em buffe com opções deliciosas para iniciar bem seu dia. Já a estadia nas acomodações superiores lhe proporciona uma boa noite de sono, uma suite com moveis simples, ar condicionado frio, frigobar e Tv LCD. Ambas acomodações possuem as comodidades padroes como shampoo, sabonete, toalhas e secador de cabelo.";
 
-const STANDARTCOUPLEDESC =
+const STANDARDCOUPLEDESC =
     "Esta acomodação também pode ser chamada de padrão. Possui uma cama de casal, armário, luminária, TV LCD, ar condicionado somente frio e frigobar. Conta com um banheiro completo com comodidades como sabonete, shampoo, secador e toalhas.";
 
-const STANDARTDOUBLESINGLEDESC =
+const STANDARDDOUBLESINGLEDESC =
     "Esta acomodação também pode ser chamada de padrão. Possui uma cama de casal, armário, luminária, TV LCD, ar condicionado somente frio e frigobar. Conta com um banheiro completo com comodidades como sabonete, shampoo, secador e toalhas.";
 
-const STANDARTSINGLEDESC =
+const STANDARDSINGLEDESC =
     "Esta acomodação também pode ser chamada de padrão. Possui uma cama de casal, armário, luminária, TV LCD, ar condicionado somente frio e frigobar. Conta com um banheiro completo com comodidades como sabonete, shampoo, secador e toalhas.";
 
 const WORKECONOMYDESC =
