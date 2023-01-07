@@ -5,7 +5,7 @@ class AccommodationImages {
   static List<String> getAccommodationImages() {
     return [
       EnumAccommodationsImages.superiorCasal.uri,
-      EnumAccommodationsImages.standardDuploSolteiro.uri,
+      EnumAccommodationsImages.superiorDuploSolteiro.uri,
       EnumAccommodationsImages.superiorTriploCasal.uri,
       EnumAccommodationsImages.superiorTriploSolteiro.uri,
       EnumAccommodationsImages.standardCasal.uri,

@@ -1,5 +1,5 @@
+import 'dart:html' as html;
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nhtelwebsite/constants/constants.dart';
 import 'package:nhtelwebsite/helpers/enums/enum_icons.dart';
 import 'package:nhtelwebsite/helpers/enums/enum_images.dart';
@@ -69,6 +69,34 @@ class HotelSection extends StatelessWidget {
                 style: Theme.of(context).textTheme.headline5,
                 textAlign: TextAlign.center,
               ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                InkWell(
+                  onTap: () => {
+                    html.window.open(
+                        'https://instagram.com/nhtel.acomodacoes?igshid=YmMyMTA2M2Y=',
+                        "_blank")
+                  },
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      SizedBox(
+                          height: 40,
+                          width: 40,
+                          child: Image.asset(EnumIcons.instagram.uri)),
+                      Padding(
+                        padding: const EdgeInsets.all(5),
+                        child: Text(
+                          'Nhtel',
+                          style: Theme.of(context).textTheme.headline5,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              ],
             )
           ],
         ),

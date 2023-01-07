@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
   double _height = 100.0;
   final List<Widget> bodyWidgets = <Widget>[
     const HotelSection(),
-    AccommodationsSection(),
+    const AccommodationsSection(),
     const ConvenienceSection(),
     const EventsSection(),
     const LocalizationSection()
@@ -42,7 +42,8 @@ class HomePage extends StatelessWidget {
       key: scaffoldKey,
       extendBodyBehindAppBar: true,
       extendBody: true,
-      appBar: ResponsiveWidget.isSmallScreen(context)
+      appBar: ResponsiveWidget.isSmallScreen(context) ||
+              ResponsiveWidget.isMediumScreen(context)
           ? PreferredSize(
               preferredSize: Size(screenSize.width, 90),
               child: MobileNavBar(scaffoldKey),

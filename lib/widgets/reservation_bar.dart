@@ -17,7 +17,7 @@ class ReservationBar extends StatelessWidget {
     return Container(
       color: primaryColor.withOpacity(0.6),
       width: screenSize.width,
-      height: 90,
+      height: 70,
       child: Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,

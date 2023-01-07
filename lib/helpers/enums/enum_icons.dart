@@ -15,7 +15,8 @@ enum EnumIcons {
   pig,
   whatsApp,
   work,
-  cardHotel
+  cardHotel,
+  instagram
 }
 
 extension EnumGetter on EnumIcons {
@@ -55,6 +56,8 @@ extension EnumGetter on EnumIcons {
         return "assets/icons/mesa_trabalho_icon.svg";
       case EnumIcons.cardHotel:
         return "assets/icons/card_hotel.svg";
+      case EnumIcons.instagram:
+        return "assets/icons/Instagram.png";
     }
   }
 }

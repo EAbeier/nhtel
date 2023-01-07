@@ -20,6 +20,6 @@ class TitleAndDescriptions {
         STANDARDCOUPLEDESC,
         STANDARDDOUBLESINGLEDESC,
         STANDARDSINGLEDESC,
-        WORKECONOMYTITLE
+        WORKECONOMYDESC
       ];
 }

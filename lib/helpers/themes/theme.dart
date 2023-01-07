@@ -70,5 +70,10 @@ final theme = ThemeData(
       fontFamily: 'Inter',
       color: _bodyTextColor,
     ),
+    bodyText1: TextStyle(
+        fontSize: 10,
+        fontWeight: FontWeight.w700,
+        fontFamily: 'Inter',
+        color: _bodyTextColor),
   ),
 );

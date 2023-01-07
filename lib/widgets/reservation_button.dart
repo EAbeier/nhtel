@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 import 'dart:html' as html;
 import 'package:nhtelwebsite/helpers/style.dart';
 import 'package:nhtelwebsite/models/message_model.dart';

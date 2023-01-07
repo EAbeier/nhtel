@@ -36,14 +36,14 @@ class ConvenienceCard extends StatelessWidget {
                 SizedBox(
                   height: ResponsiveWidget.isSmallScreen(context)
                       ? screenSize.height - screenSize.height * 0.9
-                      : 60,
+                      : 50,
                   child: SvgPicture.asset(
                     EnumIcons.tv.uri,
                     semanticsLabel: 'tv icon',
                   ),
                 ),
                 SizedBox(
-                  height: 150,
+                  height: 140,
                   width: 200,
                   child: Text(
                     overflow: TextOverflow.clip,
@@ -55,14 +55,14 @@ class ConvenienceCard extends StatelessWidget {
                 SizedBox(
                   height: ResponsiveWidget.isSmallScreen(context)
                       ? screenSize.height - screenSize.height * 0.9
-                      : 60,
+                      : 40,
                   child: SvgPicture.asset(
                     EnumIcons.work.uri,
                     semanticsLabel: 'work icon',
                   ),
                 ),
                 SizedBox(
-                  height: 150,
+                  height: 140,
                   width: 200,
                   child: Text(
                     overflow: TextOverflow.clip,
@@ -79,14 +79,14 @@ class ConvenienceCard extends StatelessWidget {
                 SizedBox(
                   height: ResponsiveWidget.isSmallScreen(context)
                       ? screenSize.height - screenSize.height * 0.9
-                      : 60,
+                      : 50,
                   child: SvgPicture.asset(
                     EnumIcons.wifiAccommodations.uri,
                     semanticsLabel: 'wifi icon',
                   ),
                 ),
                 SizedBox(
-                  height: 150,
+                  height: 140,
                   width: 200,
                   child: Text(
                     overflow: TextOverflow.clip,
@@ -98,14 +98,14 @@ class ConvenienceCard extends StatelessWidget {
                 SizedBox(
                   height: ResponsiveWidget.isSmallScreen(context)
                       ? screenSize.height - screenSize.height * 0.9
-                      : 60,
+                      : 40,
                   child: SvgPicture.asset(
                     EnumIcons.location.uri,
                     semanticsLabel: 'location icon',
                   ),
                 ),
                 SizedBox(
-                  height: 150,
+                  height: 140,
                   width: 200,
                   child: Text(
                     overflow: TextOverflow.clip,
@@ -122,14 +122,14 @@ class ConvenienceCard extends StatelessWidget {
                 SizedBox(
                   height: ResponsiveWidget.isSmallScreen(context)
                       ? screenSize.height - screenSize.height * 0.9
-                      : 60,
+                      : 50,
                   child: SvgPicture.asset(
                     EnumIcons.mug.uri,
                     semanticsLabel: 'mug icon',
                   ),
                 ),
                 SizedBox(
-                  height: 150,
+                  height: 140,
                   width: 200,
                   child: Text(
                     overflow: TextOverflow.clip,
@@ -142,14 +142,14 @@ class ConvenienceCard extends StatelessWidget {
                 SizedBox(
                   height: ResponsiveWidget.isSmallScreen(context)
                       ? screenSize.height - screenSize.height * 0.9
-                      : 60,
+                      : 40,
                   child: SvgPicture.asset(
                     EnumIcons.attendance.uri,
                     semanticsLabel: '24/7 icon',
                   ),
                 ),
                 SizedBox(
-                  height: 150,
+                  height: 140,
                   width: 200,
                   child: Text(
                     overflow: TextOverflow.clip,

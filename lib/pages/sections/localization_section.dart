@@ -84,7 +84,7 @@ class LocalizationSection extends StatelessWidget {
                     ),
                     SizedBox(
                       height: screenSize.height - screenSize.height * 0.9,
-                      width: screenSize.width - screenSize.width * 0.8,
+                      width: screenSize.width - screenSize.width * 0.7,
                       child: Stack(
                         children: [
                           Text(
