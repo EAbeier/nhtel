@@ -19,7 +19,6 @@ class _BedroomQuantityState extends State<BedroomQuantity> {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(

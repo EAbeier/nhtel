@@ -5,6 +5,7 @@ import 'package:nhtelwebsite/pages/sections/convenience_section.dart';
 import 'package:nhtelwebsite/pages/sections/events_section.dart';
 import 'package:nhtelwebsite/pages/sections/hotel_section.dart';
 import 'package:nhtelwebsite/pages/sections/localization_section.dart';
+import 'package:nhtelwebsite/widgets/mobile_reservation_bar.dart';
 import 'package:nhtelwebsite/widgets/nav_bar.dart';
 import 'package:nhtelwebsite/widgets/navbar_mobile.dart';
 import 'package:nhtelwebsite/widgets/reservation_bar.dart';
@@ -46,7 +47,7 @@ class HomePage extends StatelessWidget {
               ResponsiveWidget.isMediumScreen(context)
           ? PreferredSize(
               preferredSize: Size(screenSize.width, 90),
-              child: MobileNavBar(scaffoldKey),
+              child: mobileNavBar(scaffoldKey),
             )
           : PreferredSize(
               preferredSize: Size(screenSize.width, 90),
@@ -62,7 +63,10 @@ class HomePage extends StatelessWidget {
       ),
       backgroundColor: Colors.white,
       floatingActionButton: const TalkToUs(),
-      bottomNavigationBar: const ReservationBar(),
+      bottomNavigationBar: ResponsiveWidget.isSmallScreen(context) ||
+              ResponsiveWidget.isMediumScreen(context)
+          ? const MobileReservationBar()
+          : const ReservationBar(),
     );
   }
 }

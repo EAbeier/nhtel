@@ -26,12 +26,11 @@ class _CheckInDatePickerState extends State<CheckInDatePicker> {
           "Chegada:",
           style: Theme.of(context).textTheme.headline3,
         ),
-        const Padding(
-          padding: EdgeInsets.only(right: 10),
-        ),
+        const SizedBox(width: 10),
         SizedBox(
           height: 30,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
                 height: 30,

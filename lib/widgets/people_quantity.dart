@@ -19,7 +19,6 @@ class _PeopleQuantityState extends State<PeopleQuantity> {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(
