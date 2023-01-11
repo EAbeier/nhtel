@@ -10,6 +10,7 @@ enum EnumIcons {
   airConditioner,
   attendance,
   onePerson,
+  telephone,
   twoPeople,
   threePeople,
   twoPeopleSuperior,
@@ -64,6 +65,8 @@ extension EnumGetter on EnumIcons {
         return "assets/icons/card_hotel.svg";
       case EnumIcons.instagram:
         return "assets/icons/Instagram.png";
+      case EnumIcons.telephone:
+        return "assets/icons/telephone.svg";
     }
   }
 }

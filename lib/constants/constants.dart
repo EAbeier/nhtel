@@ -60,7 +60,7 @@ const TALKTOUS = "Fale Conosco";
 //Descriptions
 
 const HOTELDESCRIPTION =
-    "O Nhtel surge com um novo conceito de hotelaria na cidade de novo Hamburgo. Com dois prédios separados temos duas opções de estadia para suprir qualquer necessidade. Um banho quente, uma cama confortável e uma boa noite de sono é a prioridade para nossos hóspedes.";
+    "O Nhtel surge com um novo conceito de hotelaria na cidade de Novo Hamburgo. Com dois prédios separados temos duas opções de estadia para suprir qualquer necessidade. Um banho quente, uma cama confortável e uma boa noite de sono é a prioridade para nossos hóspedes.";
 
 const LOCALIZATIONDESCRIPTION =
     "Ficamos localizado a apenas 42Km de distância da capital Porto Alegre, 35min de metrô do Aeroporto Internacional Salgado Filho, 2km de carro e 3min de metrô do Centro de Eventos Fenac e da Rodoviária de Novo Hamburgo. Além de estarmos no coração da cidade e 2 quadras de distancia do Bourbon Shopping de Novo Hamburgo e 4km do Outlet I Fashion.";

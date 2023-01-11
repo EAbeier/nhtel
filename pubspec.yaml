@@ -81,6 +81,7 @@ flutter:
     - assets/icons/one_person_icon.svg
     - assets/icons/two_people_Icon.svg
     - assets/icons/three_people_Icon.svg
+    - assets/icons/telephone.svg
     - assets/icons/pig_icon.svg
     - assets/icons/couple_superior.svg
     - assets/icons/whatsapp.png
