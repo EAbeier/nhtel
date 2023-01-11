@@ -6,7 +6,15 @@ enum EnumAccommodationsImages {
   standardCasal,
   standardDuploSolteiro,
   standardSolteiro,
-  workEEconomy
+  workEEconomy,
+  superiorCasalMobile,
+  superiorDuploSolteiroMobile,
+  superiorTriploCasalMobile,
+  superiorTriploSolteiroMobile,
+  standardCasalMobile,
+  standardDuploSolteiroMobile,
+  standardSolteiroMobile,
+  workEEconomyMobile,
 }
 
 extension EnumGetter on EnumAccommodationsImages {
@@ -28,6 +36,22 @@ extension EnumGetter on EnumAccommodationsImages {
         return 'assets/images/standard_solteiro.png';
       case EnumAccommodationsImages.workEEconomy:
         return 'assets/images/work_e_economy.png';
+      case EnumAccommodationsImages.superiorCasalMobile:
+        return 'assets/images/superior_casal_mobile.png';
+      case EnumAccommodationsImages.superiorDuploSolteiroMobile:
+        return 'assets/images/superior_duplo_solteiro_mobile.png';
+      case EnumAccommodationsImages.superiorTriploCasalMobile:
+        return 'assets/images/superior_triplo_casal_mobile.png';
+      case EnumAccommodationsImages.superiorTriploSolteiroMobile:
+        return 'assets/images/superior_triplo_solteiro_mobile.png';
+      case EnumAccommodationsImages.standardCasalMobile:
+        return 'assets/images/standard_casal_mobile.png';
+      case EnumAccommodationsImages.standardDuploSolteiroMobile:
+        return 'assets/images/standard_duplo_solteiro_mobile.png';
+      case EnumAccommodationsImages.standardSolteiroMobile:
+        return 'assets/images/standard_solteiro_mobile.png';
+      case EnumAccommodationsImages.workEEconomyMobile:
+        return 'assets/images/work_e_economy_mobile.png';
     }
   }
 }

@@ -248,17 +248,19 @@ class _AccommodationsSectionState extends State<AccommodationsSection> {
                             ],
                           ),
                         ),
-                        SizedBox(
-                          height: 80,
-                          width: 80,
+                        MouseRegion(
+                          cursor: SystemMouseCursors.click,
                           child: InkWell(
                             onTap: () => _changeInformations(false),
-                            child: MouseRegion(
-                              cursor: SystemMouseCursors.click,
-                              child: Icon(
-                                size: 80,
-                                Icons.arrow_right_sharp,
-                                color: secondaryColor,
+                            child: SizedBox(
+                              height: 80,
+                              width: 80,
+                              child: FittedBox(
+                                fit: BoxFit.fill,
+                                child: Icon(
+                                  Icons.arrow_right_sharp,
+                                  color: secondaryColor,
+                                ),
                               ),
                             ),
                           ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nhtelwebsite/helpers/style.dart';
 import 'package:nhtelwebsite/models/reservation.dart';
-import 'package:nhtelwebsite/widgets/pop_up_reservation.dart';
+import 'package:nhtelwebsite/widgets/mobile/pop_up_reservation.dart';
 import 'package:nhtelwebsite/widgets/reservation_button.dart';
 
 class MobileReservationBar extends StatelessWidget {

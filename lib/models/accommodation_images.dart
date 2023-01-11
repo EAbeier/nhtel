@@ -14,4 +14,17 @@ class AccommodationImages {
       EnumAccommodationsImages.workEEconomy.uri,
     ];
   }
+
+  static List<String> getAccommodationImagesMobile() {
+    return [
+      EnumAccommodationsImages.superiorCasalMobile.uri,
+      EnumAccommodationsImages.superiorDuploSolteiroMobile.uri,
+      EnumAccommodationsImages.superiorTriploCasalMobile.uri,
+      EnumAccommodationsImages.superiorTriploSolteiroMobile.uri,
+      EnumAccommodationsImages.standardCasalMobile.uri,
+      EnumAccommodationsImages.standardDuploSolteiroMobile.uri,
+      EnumAccommodationsImages.standardSolteiroMobile.uri,
+      EnumAccommodationsImages.workEEconomyMobile.uri,
+    ];
+  }
 }

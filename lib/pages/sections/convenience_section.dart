@@ -59,7 +59,7 @@ class ConvenienceSection extends StatelessWidget {
                 child: Text(
                   overflow: TextOverflow.clip,
                   textAlign: TextAlign.center,
-                  '*Incluso gratuitamente somente em algumas acomodações, consultar acréscimo.',
+                  OBSERVATION,
                   style: Theme.of(context).textTheme.subtitle2,
                 ),
               ),

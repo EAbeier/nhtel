@@ -6,7 +6,6 @@ final _highlightColor = secondaryColor;
 final _cardColor = primaryColor;
 const _backgroundColor = Color(0xFFD6DFE4);
 const _bodyTextColor = Color(0xFFFFFFFF);
-const _strokeColor = Color(0xFF000000);
 
 final theme = ThemeData(
   brightness: Brightness.light,

@@ -33,6 +33,22 @@ const COLDAIRCONDITIONER = "Ar Frio";
 
 const COFFEEINCLUDED = "Café Incluso";
 
+const COUPLESUPERIORMOBILE = 'Superior Casal';
+
+const DOUBLESINGLESUPERIORMOBILE = 'Superior Duplo Solteiro';
+
+const TRIPLECOUPLESUPERIORMOBILE = 'Superior Triplo Casal';
+
+const TRIPLESINGLESUPERIORMOBILE = 'Superior Triplo Solteiro';
+
+const COUPLESTANDARDMOBILE = 'Standart Duplo Solteiro';
+
+const DOUBLESINGLESTANDARDMOBILE = 'Standart Solteiro';
+
+const SINGLESTANDARDMOBILE = 'Standart Solteiro';
+
+const WORKECONOMYMOBILE = "Work & Economy";
+
 const TV = "TV";
 
 const WIFI = "WIFI";
@@ -79,23 +95,50 @@ const CONTACTSDESCRIPTION =
 const SUPERIORCOUPLEDESC =
     "Esta acomodação é a mais completa do hotel possuindo móveis sobre medida, TV  Smart, frigobar a ar condicionado quente e frio. Conta com um banheiro completo com bancada de mármore, comodidades como sabonete, shampoo, secador e toalhas.";
 
+const SUPERIORCOUPLEDESCMOBILE =
+    "Esta acomodação é a mais completa do hotel possuindo móveis sobre medida, TV  Smart, frigobar a ar condicionado quente e frio.";
+
 const SUPERIORDOUBLESINGLEDESC =
     "A estadia nas acomodações superiores lhe proporciona uma boa noite de sono, uma suite com moveis superiores, ar condicionado quente e frio, frigobar e Smart TV. Ambas acomodações possuem as comodidades padroes como shampoo, sabonete, toalhas e secador de cabelo.";
+
+const SUPERIORDOUBLESINGLEDESCMOBILE =
+    "A estadia nas acomodações superiores lhe proporciona uma boa noite de sono, uma suite com moveis superiores, ar condicionado quente e frio, frigobar e Smart TV.";
 
 const SUPERIORTRIPLECOUPLEDESC =
     "Esta acomodação é a mais completa do hotel possuindo móveis sobre medida. Conta com um banheiro completo com bancada de mármore, comodidades como sabonete, shampoo, secador e toalhas.";
 
+const SUPERIORTRIPLECOUPLEDESCMOBILE =
+    "Esta acomodação é a mais completa do hotel possuindo móveis sobre medida. Conta com um banheiro completo com bancada de mármore.";
+
 const SUPERIORTRIPLESINGLEDESC =
+    "As suites Superiores. As acomodações superiores possuem as comodidades padroes como shampoo, sabonete, toalhas e secador de cabelo.";
+
+const SUPERIORTRIPLESINGLEDESCMOBILE =
     "As suites Superiores. As acomodações superiores possuem as comodidades padroes como shampoo, sabonete, toalhas e secador de cabelo.";
 
 const STANDARDCOUPLEDESC =
     "Esta acomodação também pode ser chamada de padrão. Possui uma cama de casal, armário, luminária, TV LCD, ar condicionado somente frio e frigobar. Conta com um banheiro completo com comodidades como sabonete, shampoo, secador e toalhas.";
 
+const STANDARDCOUPLEDESCMOBILE =
+    "Esta acomodação também pode ser chamada de padrão. Possui uma cama de casal, armário, luminária, TV LCD, ar condicionado somente frio e frigobar.";
+
 const STANDARDDOUBLESINGLEDESC =
     "Esta acomodação também pode ser chamada de padrão. Possui duas camas de solteiro, armário, luminária, TV LCD, ar condicionado somente frio e frigobar. Conta com um banheiro completo com comodidades como sabonete, shampoo, secador e toalhas.";
+
+const STANDARDDOUBLESINGLEDESCMOBILE =
+    "Esta acomodação também pode ser chamada de padrão. Possui duas camas de solteiro, armário, luminária, TV LCD, ar condicionado somente frio e frigobar.";
 
 const STANDARDSINGLEDESC =
     "Esta acomodação também pode ser chamada de padrão. Possui uma cama de casal, armário, luminária, TV LCD, ar condicionado somente frio e frigobar. Conta com um banheiro completo com comodidades como sabonete, shampoo, secador e toalhas.";
 
+const STANDARDSINGLEDESCMOBILE =
+    "Esta acomodação também pode ser chamada de padrão. Possui uma cama de casal, armário, luminária, TV LCD, ar condicionado somente frio e frigobar.";
+
 const WORKECONOMYDESC =
     "Esta acomodação é um pequeno quarto individual. Oferece móveis padrão, como cama, mesa de trabalho, luminária e uma pequena pia. comodidades como sabonete, shampoo e toalhas ficam no quarto. O banheiro é compartilhado com outras 3 acomodações.";
+
+const WORKECONOMYDESCMOBILE =
+    "Esta acomodação é um pequeno quarto individual. Oferece móveis padrão, como cama, mesa de trabalho, luminária e uma pequena pia. comodidades como sabonete, shampoo e toalhas ficam no quarto. O banheiro é compartilhado com outras 3 acomodações.";
+
+const OBSERVATION =
+    "*Incluso gratuitamente somente em algumas acomodações, consultar acréscimo.";

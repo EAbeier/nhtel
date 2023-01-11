@@ -19,10 +19,8 @@ class SectionTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: ResponsiveWidget.isSmallScreen(context)
-          ? MainAxisAlignment.start
-          : MainAxisAlignment.spaceEvenly,
-      crossAxisAlignment: CrossAxisAlignment.end,
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         SizedBox(
           width: width,
@@ -41,7 +39,7 @@ class SectionTitle extends StatelessWidget {
                 sectionTitle,
                 style: TextStyle(
                   fontFamily: 'Inter',
-                  fontSize: ResponsiveWidget.isSmallScreen(context) ? 25 : 48,
+                  fontSize: ResponsiveWidget.isSmallScreen(context) ? 20 : 48,
                   fontWeight: FontWeight.w700,
                   foreground: Paint()
                     ..style = PaintingStyle.stroke
@@ -52,7 +50,7 @@ class SectionTitle extends StatelessWidget {
               Text(
                 sectionTitle,
                 style: ResponsiveWidget.isSmallScreen(context)
-                    ? Theme.of(context).textTheme.headline6
+                    ? Theme.of(context).textTheme.headline5
                     : Theme.of(context).textTheme.headline2,
               ),
             ],

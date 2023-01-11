@@ -25,22 +25,25 @@ class _NavBarState extends State<NavBar> {
         Container(
           height: 90,
           padding: const EdgeInsets.only(left: 200),
-          child: ListView.builder(
-            scrollDirection: Axis.horizontal,
-            physics: const NeverScrollableScrollPhysics(),
-            itemCount: menu.length,
-            itemBuilder: (BuildContext context, int index) {
-              var item = menu.getMenuItemContent(index);
-              return Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25),
-                child: NavItem(
-                  index: index,
-                  animateToIndex: widget.animateToIndex,
-                  iconPath: item.iconPath,
-                  itemTitle: item.title,
-                ),
-              );
-            },
+          child: Container(
+            alignment: Alignment.center,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              physics: const NeverScrollableScrollPhysics(),
+              itemCount: menu.length,
+              itemBuilder: (BuildContext context, int index) {
+                var item = menu.getMenuItemContent(index);
+                return Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 25),
+                  child: NavItem(
+                    index: index,
+                    animateToIndex: widget.animateToIndex,
+                    iconPath: item.iconPath,
+                    itemTitle: item.title,
+                  ),
+                );
+              },
+            ),
           ),
         ),
         Container(

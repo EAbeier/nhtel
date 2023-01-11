@@ -82,10 +82,12 @@ flutter:
     - assets/icons/two_people_Icon.svg
     - assets/icons/three_people_Icon.svg
     - assets/icons/pig_icon.svg
+    - assets/icons/couple_superior.svg
     - assets/icons/whatsapp.png
     - assets/icons/Instagram.svg
     - assets/icons/Instagram.png
     - assets/icons/three_people_Icon.png
+    - assets/icons/three_people_superior.png
 
     # images
     - assets/images/nhtel_logo.png
@@ -101,7 +103,14 @@ flutter:
     - assets/images/standard_casal.png
     - assets/images/standard_duplo_solteiro.png
     - assets/images/standard_solteiro.png
-    - assets/images/work_e_economy.png
+    - assets/images/superior_casal_mobile.png
+    - assets/images/superior_duplo_solteiro_mobile.png
+    - assets/images/superior_triplo_casal_mobile.png
+    - assets/images/superior_triplo_solteiro_mobile.png
+    - assets/images/standard_casal_mobile.png
+    - assets/images/standard_duplo_solteiro_mobile.png
+    - assets/images/standard_solteiro_mobile.png
+    - assets/images/work_e_economy_mobile.png
     - assets/images/localization_on_google.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
