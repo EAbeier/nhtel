@@ -1,5 +1,6 @@
 import 'dart:html' as html;
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nhtelwebsite/constants/constants.dart';
 import 'package:nhtelwebsite/helpers/enums/enum_icons.dart';
 import 'package:nhtelwebsite/helpers/enums/enum_images.dart';
@@ -87,6 +88,25 @@ class MobileHotelSection extends StatelessWidget {
                       )
                     ],
                   ),
+                ),
+                const Padding(padding: EdgeInsets.only(left: 10)),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    SizedBox(
+                      height: 35,
+                      width: 35,
+                      child: SvgPicture.asset(
+                          color: Colors.white, EnumIcons.telephone.uri),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(5),
+                      child: Text(
+                        '(51) 3066-0104',
+                        style: Theme.of(context).textTheme.headline5,
+                      ),
+                    )
+                  ],
                 ),
               ],
             )

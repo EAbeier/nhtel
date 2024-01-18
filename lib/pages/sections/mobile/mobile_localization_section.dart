@@ -27,8 +27,8 @@ class MobileLocalizationSection extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 20, top: 20),
             child: SizedBox(
-              width: screenSize.width - screenSize.width * 0.3,
-              height: 50,
+              width: screenSize.width - screenSize.width * 0.2,
+              height: 80,
               child: SectionTitle(
                 sectionTitle: LOCALIZATIONTITLE,
                 sectionIconUri: EnumIcons.location.uri,

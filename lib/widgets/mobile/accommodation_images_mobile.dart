@@ -17,8 +17,8 @@ class AccommodationImagesMobile {
   var _controlVariable = 0;
   void makeReservation(BuildContext ctx) {
     var screenSize = MediaQuery.of(ctx).size;
-    _titleWidth = screenSize.width - screenSize.width * 0.2;
     _iconWidth = screenSize.width - screenSize.width * 0.9;
+    _titleWidth = screenSize.width - _iconWidth;
     _textWidth = (screenSize.width - screenSize.width * 0.2) / 3;
     _imageWidth = screenSize.width - screenSize.width * 0.2;
     showDialog(
@@ -35,7 +35,7 @@ class AccommodationImagesMobile {
               itemCount: TitleAndDescriptions.getMobileTitles().length,
               itemBuilder: (BuildContext _, int index) {
                 return SizedBox(
-                  width: screenSize.width - screenSize.width * 0.2,
+                  width: screenSize.width,
                   child: Row(
                     children: [
                       _getIcon(
@@ -103,7 +103,7 @@ class AccommodationImagesMobile {
                       ),
                       SizedBox(
                         width: (screenSize.width - screenSize.width * 0.2) / 3,
-                        height: (screenSize.height - screenSize.height * 0.5),
+                        height: (screenSize.height - screenSize.height * 0.4),
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemCount:
@@ -227,7 +227,7 @@ class AccommodationImagesMobile {
 
   void _animateTitleToIndex(int index) {
     _controllerTitle.animateTo(
-      index * _titleWidth,
+      index * (_titleWidth + _iconWidth),
       duration: const Duration(seconds: 2),
       curve: Curves.fastOutSlowIn,
     );
@@ -251,7 +251,7 @@ class AccommodationImagesMobile {
 
   void _animateIconToIndex(int index) {
     _controllerIcon.animateTo(
-      index * _iconWidth,
+      index * (_titleWidth + _iconWidth),
       duration: const Duration(seconds: 2),
       curve: Curves.fastOutSlowIn,
     );

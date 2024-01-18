@@ -138,7 +138,7 @@ const WORKECONOMYDESC =
     "Esta acomodação é um pequeno quarto individual. Oferece móveis padrão, como cama, mesa de trabalho, luminária e uma pequena pia. comodidades como sabonete, shampoo e toalhas ficam no quarto. O banheiro é compartilhado com outras 3 acomodações.";
 
 const WORKECONOMYDESCMOBILE =
-    "Esta acomodação é um pequeno quarto individual. Oferece móveis padrão, como cama, mesa de trabalho, luminária e uma pequena pia. comodidades como sabonete, shampoo e toalhas ficam no quarto. O banheiro é compartilhado com outras 3 acomodações.";
+    "Esta acomodação é um pequeno quarto individual. Oferece cama, mesa de trabalho, luminária e uma pequena pia. Sabonete, shampoo e toalhas ficam no quarto. O banheiro é compartilhado.";
 
 const OBSERVATION =
     "*Incluso gratuitamente somente em algumas acomodações, consultar acréscimo.";

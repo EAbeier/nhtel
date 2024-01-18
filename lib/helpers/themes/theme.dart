@@ -8,6 +8,7 @@ const _backgroundColor = Color(0xFFD6DFE4);
 const _bodyTextColor = Color(0xFFFFFFFF);
 
 final theme = ThemeData(
+  useMaterial3: false,
   brightness: Brightness.light,
   primaryColor: _primaryColor,
   highlightColor: _highlightColor,
