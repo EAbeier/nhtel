@@ -68,9 +68,8 @@ class MobileHotelSection extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: () => {
-                    html.window.open(
-                        'https://instagram.com/nhtel.acomodacoes?igshid=YmMyMTA2M2Y=',
-                        "_blank")
+                    html.window
+                        .open('https://www.instagram.com/hotelnhtel/', "_blank")
                   },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,

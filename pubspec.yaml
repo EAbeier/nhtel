@@ -111,6 +111,7 @@ flutter:
     - assets/images/standard_casal_mobile.png
     - assets/images/standard_duplo_solteiro_mobile.png
     - assets/images/standard_solteiro_mobile.png
+    - assets/images/work_e_economy.png
     - assets/images/work_e_economy_mobile.png
     - assets/images/localization_on_google.png
 
